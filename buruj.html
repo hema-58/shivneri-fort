@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f1ea;
+        }
+
+        .history {
+            padding: 50px 20px;
+            background: #fff8e1;
+            border: 2px solid #e0c097;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            max-width: 1500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .history h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #4b2e2e;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px #e6d4c3;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .audio-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            outline: none;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .image-gallery img {
+            width: 500px;
+            height: 300px;
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            object-fit: cover;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 40px;
+            border-left: 3px solid #8a4a3b;
+            margin-top: 30px;
+        }
+
+        .timeline div {
+            position: relative;
+            padding: 10px 20px;
+            margin-bottom: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 4px solid #8a4a3b;
+            font-size: 1.1em;
+            color: #4b2e2e;
+            line-height: 1.6;
+            font-family: 'Georgia', serif;
+            text-align: justify;
+        }
+
+        .timeline div::before {
+            content: '⦿';
+            position: absolute;
+            left: -35px;
+            top: 5px;
+            color: #8a4a3b;
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .image-gallery img {
+                width: 200px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section id="history" class="history">
+    <h2> शिवनेरी </h2>
+
+    <div class="audio-container">
+        <audio controls>
+            <source src="audio/buruj.mp4" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="image-gallery">
+        <img src="images/Buruj2.jpeg" alt="Fort View 1">
+        <img src="images/Buruj3.jpeg.webp" alt="Fort View 2">
+        <img src="images/shilalekh.png" alt="Fort View 3">
+    </div>
+
+    <div class="timeline">
+        <div> शिवनेरीवरील बुरुजांचे वैशिष्ट्ये:
+
+            360 अंश संरक्षण देण्यासाठी बुरुजांची रचना केली गेली आहे.
+            
+            बुरुजांवरून शत्रूच्या हालचालींवर नजर ठेवता येत असे.
+            
+            प्रत्येक बुरुजामध्ये तोफ, धनुष्यबाण किंवा बंदुकींच्या गोळ्यांसाठी छिद्र (झरे) असत. काही बुरुजांमध्ये पाण्याच्या टाक्या किंवा सामग्री साठवणूक यासाठी जागा असत.</div><br>
+         <div>शिवनेरीवरील काही बुरुजांना विशिष्ट नावे नाहीत, पण हे बुरुज किल्ल्याच्या मध्यवर्ती सुरक्षा यंत्रणेत महत्वाची भूमिका बजावत असत. हे बुरुज दगडी असून, काळाच्या ओघातही भक्कम आणि टिकाऊ राहिले आहेत.</div><br>
+          
+         <div>  
+           
+या बुरुजाचे बांधकाम आधुनिक इंटरलॉकिंग पद्धतीने केलेले आहे. ज्यामध्ये दोन दगडांमध्ये खाच करून त्यांना एकमेकांमध्ये घट्ट बसवले जाते .
+या बांधणीला अजुन मजबूती प्रदान करण्यासाठी चुना , शिसे , गूळ डाळींचे पिठ यांच्या एकत्रित मिश्रणाचा वापर केला जातो 
+         </div><br>  
+         
+             
+        </div>
+</section>
+
+</body>
+</html>

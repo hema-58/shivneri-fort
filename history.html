@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f1ea;
+        }
+
+        .history {
+            padding: 50px 20px;
+            background: #fff8e1;
+            border: 2px solid #e0c097;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .history h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #4b2e2e;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px #e6d4c3;
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Styling the audio player */
+        .audio-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            outline: none;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 40px;
+            border-left: 3px solid #8a4a3b;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            bottom: 0;
+            width: 20px;
+            background: linear-gradient(180deg, #e7cba9, #d4b484);
+            border-radius: 50%;
+        }
+
+        .timeline div,
+        .timeline p {
+            position: relative;
+            padding: 10px 20px;
+            margin-bottom: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 4px solid #8a4a3b;
+        }
+
+        .timeline div::before,
+        .timeline p::before {
+            content: '⦿';
+            position: absolute;
+            left: -35px;
+            top: 5px;
+            color: #8a4a3b;
+            font-size: 20px;
+        }
+
+        .timeline div:hover,
+        .timeline p:hover {
+            background: #f9f3e7;
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+
+        .timeline div:last-child,
+        .timeline p:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline div {
+            font-size: 1.1em;
+            color: #4b2e2e;
+            line-height: 1.6;
+            font-family: 'Georgia', serif;
+            text-align: justify;
+        }
+
+        .timeline p {
+            font-size: 1.2em;
+            color: #4b2e2e;
+            line-height: 1.6;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+        }
+
+        @media (max-width: 768px) {
+            .timeline {
+                padding: 20px;
+                border-left: 2px solid #8a4a3b;
+            }
+
+            .timeline div,
+            .timeline p {
+                padding: 10px;
+            }
+
+            audio {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section id="history" class="history">
+    <h2>Fort History</h2>
+
+    <!-- Styled Audio Player -->
+    <div class="audio-container">
+        <audio controls>
+          
+            <source src="audio/history.mp3" type="audio/mpeg">
+            
+
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="timeline">
+        <p> शिवाजी महाराजांचा जन्म १९ फेब्रुवारी १६३० रोजी याच गडावर झाला.त्यांचे वडील शहाजी राजे भोसले हे त्या वेळी आदिलशाही दरबारात सरदार होते आणि ते गडावर आपली पत्नी जिजाबाई यांना सुरक्षिततेसाठी ठेवून गेले होते.
+            <br>
+        </p><br>
+        <div>
+            गड मजबूत किल्ल्याने संरक्षित आहे आणि त्यात अनेक बुरुज, पाण्याची टाकं, देवळं आणि विशिष्ट वास्तुशैली आढळते. गडाच्या मुख्य प्रवेशद्वाराला "महादरवाजा" म्हणतात आणि तिथून आत गेल्यावर "शिवाई देवीचे मंदिर" दिसते, जिचे नाव महाराजांना देण्यात आले.
+        </div><br>
+        <div>
+            या किल्ल्याला चारही बाजूंनी कठीण चढाव असून त्याला जिंकावयास कठीण असा बालेकिल्ला आहे. 
+        </div><br>  
+        <div>
+            या किल्ल्याचा आकार शंकराच्या पिंडीसारखा आहे.शिवाजी महाराजांचे स्वराज्याचे विचार याच ठिकाणी रुजले. </div><br>
+        <div>
+            किल्ला डोंगरावर वसलेला असून त्याची उंची सुमारे ३५०० फूट आहे.किल्ल्यावर एक मजबूत तटबंदी असून त्यातून संपूर्ण परिसरावर नजर ठेवता येते.</div><br>
+        <div>
+            शिवनेरी किल्ला हा केवळ एक दुर्ग नव्हे, तर तो मराठी स्वराज्याचा पायाच आहे. छत्रपती शिवाजी महाराजांचे बालपण येथे घडल्यामुळे हा किल्ला इतिहासात एक अत्यंत पवित्र आणि अभिमानास्पद स्थान ठरतो.
+        </div><br>
+    </div>
+</section>
+
+</body>
+</html>

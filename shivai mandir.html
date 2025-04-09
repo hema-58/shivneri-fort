@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f1ea;
+        }
+
+        .history {
+            padding: 50px 20px;
+            background: #fff8e1;
+            border: 2px solid #e0c097;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            max-width: 1500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .history h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #4b2e2e;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px #e6d4c3;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .audio-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            outline: none;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .image-gallery img {
+            width: 500px;
+            height: 300px;
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            object-fit: cover;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 40px;
+            border-left: 3px solid #8a4a3b;
+            margin-top: 30px;
+        }
+
+        .timeline div {
+            position: relative;
+            padding: 10px 20px;
+            margin-bottom: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            border-left: 4px solid #8a4a3b;
+            font-size: 1.1em;
+            color: #4b2e2e;
+            line-height: 1.6;
+            font-family: 'Georgia', serif;
+            text-align: justify;
+        }
+
+        .timeline div::before {
+            content: '⦿';
+            position: absolute;
+            left: -35px;
+            top: 5px;
+            color: #8a4a3b;
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .image-gallery img {
+                width: 200px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section id="history" class="history">
+    <h2> शिवनेरी </h2>
+
+    <div class="audio-container">
+        <div>शिवाई देवी मंदिर :-</div><br>
+        <audio controls>
+            <source src="audio/shivaidevi.mp4" type="audio/mpeg">
+           
+            Your browser does not support the audio element.
+        </audio>
+        <!-- <div> सदर :-</div><br>
+        <audio controls>
+           
+        <source src="audio/sadar.mp3" type="audio/mpeg">
+         </audio>
+         <div>घोड्यांच्य पागा :-</div><br>
+         <audio controls>
+           
+        <source src="audio/ghodyanchyapaga.mp3" type="audio/mpeg">
+         </audio>
+    </div> -->
+
+    <div class="image-gallery">
+        <img src="images/shivaidevi.jpeg" alt="Fort View 1">
+        <!-- <img src="images/shivmandir.png" alt="Fort View 2"> -->
+        <img src="images/shivai mandir.jpg" alt="Fort View 2">
+    </div>
+
+    <div class="timeline">
+        <div>शिवाई देवी ही किल्ल्याची ग्रामदेवता मानली जाते. हे मंदिर किल्ल्याच्या आतल्या भागात वसलेले असून, मंदिरात शिवाई देवीची सुंदर मूर्ती आहे जी श्रद्धाळूंना मोठा आधार देते. मंदिराचे स्थापत्य मराठा कालीन शैलीत असून, ते साधे पण भावनांनी परिपूर्ण आहे.</div>
+        
+        
+        <div>
+            छत्रपती शिवाजी महाराजांच्या जन्माच्या आधी त्यांच्या आई जिजाऊ यांनी शिवाई देवीची प्रार्थना केली होती की, "जर पुत्र झाला तर त्याचे नाव शिवाजी ठेवेन". ही ऐतिहासिक श्रद्धा आणि भावनिक नाते या मंदिराला खास महत्त्व देते.
+            
+            
+        </div>
+    
+    </div>
+
+</section>
+
+</body>
+</html>
